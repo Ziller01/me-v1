@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./js/tailwind.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Talaat</title>
+</head>
+
+<body class="bg-black text-white flex flex-col items-center justify-center">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bootstrapicons.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+    <div class="w-[90dvw] flex flex-col  items-center justify-center gap-20 mb-10">
+
+
+        <nav
+            class="w-full fixed top-5 bg-neutral-950/50 backdrop-blur-sm p-3 rounded-lg flex items-center justify-center gap-10 text-lg cursor-pointer">
+            <a class="rounded-sm duration-300 px-2 border-b-4 border-transparent hover:border-inherit text-me" onclick="MoveTo('me')">Me</a>
+            <a class="rounded-sm duration-300 px-2 border-b-4 border-transparent hover:border-inherit" onclick="MoveTo('skills')">Skills</a>
+            <a class="rounded-sm duration-300 px-2 border-b-4 border-transparent hover:border-inherit" onclick="MoveTo('products')">Products</a>
+        </nav>
+
+
+        <div id="me"
+            class="w-full min-h-[100dvh] rounded-lg flex flex-col lg:flex-row items-center justify-center gap-5 duration-300 delay-300">
+
+            <div class="lg:w-1/2">
+                <img src="./imgs/at.png" alt="Logo">
+            </div>
+
+            <div class="h-full flex flex-col gap-10 justify-center items-start">
+                <div class="uppercase">
+                    <h1 class="text-8xl">Ahmed Talaat</h1>
+                    <h1 class="text-5xl">Web Developer</h1>
+                </div>
+                <p class="text-2xl"> Never despair of failure, Failure is the Fuel of Success </p>
+                <div class="flex flex-col">
+                    <a class="text-6xl">Contact me</a>
+                    <a class="text-2xl flex gap-2 ms-5"><i class="bi bi-envelope-at-fill"></i>Ahmed.Talaat.2077@gmail.com</a>
+                    <a class="text-2xl flex gap-2 ms-5"><i class="bi bi-whatsapp"></i>+20 1122 59 4364</a>
+                    <a class="text-2xl flex gap-2 ms-5"><i class="bi bi-discord"></i>.Ziller</a>
+                    <a class="text-2xl flex gap-2 ms-5"><i class="bi bi-ban"></i>Don't Bother Me ^_^ Joking</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="skills"
+            class="w-full rounded-lg flex flex-col items-center justify-center gap-10 text-8xl scroll-margin duration-300 delay-300">
+            <h1 class="text-6xl uppercase"><i class="bi bi-dash"></i>Skills<i class="bi bi-dash"></i></h1>
+
+            <div class="flex flex-wrap gap-5 items-center justify-center">
+                <i id="html5" class="devicon-html5-plain-wordmark" onmouseenter="Add('html5')" onmouseleave="Remove('html5')"></i>
+                <i id="css3" class="devicon-css3-plain-wordmark" onmouseenter="Add('css3')" onmouseleave="Remove('css3')"></i>
+                <i id="javascript" class="devicon-javascript-plain" onmouseenter="Add('javascript')" onmouseleave="Remove('javascript')"></i>
+            </div>
+
+            <div class="flex flex-wrap gap-5 items-center justify-center">
+                <i id="react" class="devicon-react-original-wordmark" onmouseenter="Add('react')" onmouseleave="Remove('react')"></i>
+                <i id="nextjs" class="devicon-nextjs-original-wordmark" onmouseenter="Add('nextjs','!text-blue-800')" onmouseleave="Remove('nextjs','!text-blue-800')"></i>
+                <i id="bootstrap" class="devicon-bootstrap-plain-wordmark" onmouseenter="Add('bootstrap')" onmouseleave="Remove('bootstrap')"></i>
+                <i id="tailwindcss" class="devicon-tailwindcss-plain" onmouseenter="Add('tailwindcss')" onmouseleave="Remove('tailwindcss')"></i>
+            </div>
+            
+            <div class="flex flex-wrap gap-5 items-center justify-center">
+                <i id="nodejs" class="devicon-nodejs-plain-wordmark" onmouseenter="Add('nodejs')" onmouseleave="Remove('nodejs')"></i>
+                <i id="npm" class="devicon-npm-original-wordmark" onmouseenter="Add('npm')" onmouseleave="Remove('npm')"></i>
+                <i id="express" class="devicon-express-original-wordmark" onmouseenter="Add('express')" onmouseleave="Remove('express')"></i>
+                <i id="php" class="devicon-php-plain" onmouseenter="Add('php')" onmouseleave="Remove('php')"></i>
+                <i id="python" class="devicon-python-plain-wordmark" onmouseenter="Add('python')" onmouseleave="Remove('python')"></i>
+            </div>
+
+            <div class="flex flex-wrap gap-5 items-center justify-center">
+                <i id="postgresql" class="devicon-postgresql-plain-wordmark" onmouseenter="Add('postgresql')" onmouseleave="Remove('postgresql')"></i>
+                <i id="mysql" class="devicon-mysql-plain-wordmark" onmouseenter="Add('mysql')" onmouseleave="Remove('mysql')"></i>
+                <i id="firebase" class="devicon-firebase-plain-wordmark" onmouseenter="Add('firebase')" onmouseleave="Remove('firebase')"></i>
+                <i id="mongodb" class="devicon-mongodb-plain-wordmark" onmouseenter="Add('mongodb')" onmouseleave="Remove('mongodb')"></i>
+            </div>
+
+            <div class="flex flex-wrap gap-5 items-center justify-center">
+                <i id="dot-net" class="devicon-dot-net-plain-wordmark" onmouseenter="Add('dot-net')" onmouseleave="Remove('dot-net')"></i>
+                <i id="arduino" class="devicon-arduino-plain-wordmark" onmouseenter="Add('arduino')" onmouseleave="Remove('arduino')"></i>
+                <i id="discordjs" class="devicon-discordjs-plain" onmouseenter="Add('discordjs','!text-blue-600')" onmouseleave="Remove('discordjs','!text-blue-600')"></i>
+            </div>
+        </div>
+
+        <div id="products"
+            class="w-full rounded-lg flex flex-col items-center justify-center gap-5 text-8xl scroll-margin duration-300 delay-300">
+            <h1 class="text-6xl uppercase"><i class="bi bi-dash"></i>Products<i class="bi bi-dash"></i></h1>
+            <h1 class="text-4xl">Coming Soon</h1>
+        </div>
+    </div>
+
+    <script src="./js/tailwind.config.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
